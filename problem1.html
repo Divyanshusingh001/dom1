@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <style>
+        button{
+            background-color: black;
+            font-size: larger;
+            color: rgb(240, 239, 239);
+        }
+        button:hover{
+                 background-color: antiquewhite;
+                  color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <button id="myButton"> Ring Bell </button>
+  </body>
+</html>
+<script>
+  document.getElementById("myButton").addEventListener("click", function() {
+    console.log("Please open the door");
+  });
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dproblem3 iw dom</title>
+  <style>
+    button{
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="myButton"> in console</button>
+  <p id="quote">pagal</p>
+</body>
+</html>
+<script>
+  document.getElementById("myButton").addEventListener("click", function() {
+    let quote = document.getElementById("quote").innerText;
+    console.log(quote);
+  });
+</script>

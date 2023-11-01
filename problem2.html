@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <style>
+        img{
+           width: 30%;
+        }
+        img:hover{
+            width: 31%;
+
+        }
+    </style>
+  </head>
+  <body>
+    <img
+      id="myImage"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIsJsfFHrbWZMENMt8qvFBl3VJQ72-o7Cu2vYH2inkk4csvDrs_qXP69XMXOD-JqSoH4Q&usqp=CAU"
+      alt=""
+    />
+  </body>
+</html>
+<script>
+  document.getElementById("myImage").addEventListener("click", function() {
+    alert(
+      "The website you are going to visit may harm your computer, do you still want to redirect?"
+    );
+  });
+</script>
