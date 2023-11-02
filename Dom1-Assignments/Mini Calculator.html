@@ -1,0 +1,68 @@
+<!-- Create a mini calculator application, which has following functionalities
+Addition
+Subtraction
+Division
+Multiplication
+Your app should have
+Two input boxes which should take two numbers from the user.
+Four Buttons with following text content
+Add
+Subtract
+Divide
+Multiply
+When user enter 2 and 4 and clicks on multiply button, an alert should come with 8 as ans
+When user enter 8 and 4 and clicks on Divide button,an alert should come with 2 as ans -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Calculator(DIVYANSHU)</title>
+    <style>
+        input{
+            background-color: black;
+            color: wheat;
+        }        
+        button{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="num1" placeholder="WELCOM"><br><br>
+    <input type="text" id="num2" placeholder="MASAI"><br><br>
+    
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="multiply()">Multiply</button>
+
+    <script>
+    function add() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        alert("Result: " + (num1 + num2));
+    }
+    
+    function subtract() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        alert("Result: " + (num1 - num2));
+    }
+    
+    function divide() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (num2 === 0) {
+            alert("Cannot divide by 0");
+        } else {
+            alert("Result: " + (num1 / num2));
+        }
+    }    
+    function multiply() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        alert("Result: " + (num1 * num2));
+    }
+    </script>
+</body>
+</html>
